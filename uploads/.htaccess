@@ -1,0 +1,7 @@
+# uploads/.htaccess
+# Cegah eksekusi file PHP dari folder uploads
+php_flag engine off
+Options -Indexes
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps)$">
+    Deny from all
+</FilesMatch>
